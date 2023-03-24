@@ -1,15 +1,15 @@
 module.exports = (mongoose) => {
     var schema = mongoose.Schema(
         {
-            code: String,
+            school: String,
             firstname: String,
             lastname: String,
-            email: String 
+            address: String 
         },
         {
             timestamps: true
         }
     );
-    const Student = mongoose.model("student", schema)
-    return Student
+    const Info = mongoose.model("info", schema)
+    return Info
 }
